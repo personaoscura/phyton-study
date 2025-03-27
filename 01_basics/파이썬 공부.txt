@@ -9,3 +9,26 @@ a = int(intput())
 조건문문
 if "조건" :
     내용
+반복문
+    for _ in range(끝)
+range()
+    range(끝)
+    range(시작,끝)
+    range(시작, 끝, 폭)
+리스트
+    a=[]
+    a=list()
+    슬라이싱
+        a[첫인덱스:끝인덱스]
+    연산
+        리스트 + 리스트 = 합치기
+        리스트 * 3 = 반복
+map(function,iterator)
+    li=list(map(int,input().split())
+    li=list(chr(i) for i in range(ord('a'), ord('z')+1))
+function
+    def function:
+        ---
+        return aa
+아스키 코드 변환 ord()
+반대로 변환 char()
