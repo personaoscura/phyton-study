@@ -10,6 +10,10 @@ app = Flask(__name__)
 def home():  # home() 함수는 실제로 실행될 로직을 담음
     return "Hello, Flask!"  # 브라우저에 표시될 문자열을 반환
 
+@app.route("/user/<username>")
+def show_user(username):
+    return f"안녕하세요, {username}님!"
+
 # 이 파일이 직접 실행된 경우에만 아래 코드 실행됨
 if __name__ == "__main__":
     # Flask 서버 실행 + 디버그 모드 켜기 (자동 리로드 + 에러 페이지 보기 가능)
